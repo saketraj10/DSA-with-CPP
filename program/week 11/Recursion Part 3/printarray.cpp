@@ -3,14 +3,14 @@
 using namespace std;
 void printarray(int arr[], int i, int n){
     if(i==n) return;
-    cout<<arr[i]<<" ";
     printarray(arr,i+1,n);
+    cout<<arr[i]<<" ";
 }
-void display(vector<int>& v, int i){
-    if(i==v.size()) return;
-    cout<<v[i]<<" ";
-    display(v,i+1);
-}
+// void display(vector<int>& v, int i){
+//     if(i==v.size()) return;
+//     cout<<v[i]<<" ";
+//     display(v,i+1);
+// }
 int main(){
     int n;
     cout<<"enter the size of n: ";
@@ -26,5 +26,5 @@ int main(){
     for(int i=0; i<n; i++){
         v[i]=arr[i];
     }
-    display(v,0);
+    //display(v,0);
 }
